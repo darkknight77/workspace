@@ -1,0 +1,18 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
+
+<bean id="c" class="beans.car">
+ <property name="carname" value="BMW"></property> 
+ <property name="eng" >
+    <bean class="beans.engine">
+       <property name="modelyear" value="2015"></property>
+       
+    </bean>
+ 
+ </property> 
+</bean>
+
+</beans>

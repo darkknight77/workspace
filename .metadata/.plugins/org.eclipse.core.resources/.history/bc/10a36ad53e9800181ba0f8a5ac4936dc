@@ -1,0 +1,9 @@
+package com.in28minutes.springboot;
+@Component
+class WelcomeService {
+
+	public String retrieveWelcomeMessage() {
+		//Complex Method
+		return "Good Morning updated";
+	}
+}

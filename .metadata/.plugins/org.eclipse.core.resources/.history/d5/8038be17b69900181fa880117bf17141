@@ -1,0 +1,37 @@
+package com.in28minutes.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.in28minutes.model.Question;
+import com.in28minutes.service.SurveyService;
+
+@RestController
+public class SurveyController {
+    
+	@Autowired
+	private SurveyService surveyService;
+	
+	@GetMapping("/surveys/{surveyId}/questions")
+	private List<Question> retrieveQuestionsForSurvey(@PathVariable String surveyId) {
+		// TODO Auto-generated method stub
+
+		return surveyService.retrieveQuestions(surveyId);
+		
+	}
+	
+
+	@GetMapping("/surveys/{surveyId}/questions/{questionId}")
+	private Question retrieveDetailsForQuestion(@PathVariable String surveyId,@PathVariable String questionId) {
+		// TODO Auto-generated method stub
+
+		return surveyService.retrieveQuestion(surveyId,questionId);
+		
+	}
+	
+	
+}

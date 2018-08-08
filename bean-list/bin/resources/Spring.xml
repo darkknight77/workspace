@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<bean id="c" class="beans.car" >
+<property name="carnames">
+<list>
+      <value>Audi</value>
+      <value>BMW</value>
+      <value>Porsche</value>
+      
+</list>
+
+</property>
+
+<property name="carcolors">
+<list>
+      <value>Black</value>
+      <value>White</value>
+      <value>Silver</value>
+      
+</list>
+
+</property>
+
+<property name="carspeeds">
+<set>
+      <value>345kph</value>
+      <value>200kph</value>
+      <value>333kph</value>
+      
+</set>
+
+</property>
+
+<property name="eng">
+<list>
+      <ref bean="e1"/> 
+      <ref bean="e2"/>
+      <ref bean="e3"/>
+</list>
+
+</property>
+<property name="carrelease">
+<map>
+     <entry key="Audi" value="1945"></entry>
+     <entry key="BMW" value="1933"></entry>
+     <entry key="Posche" value="1899"></entry>
+     
+</map>
+
+</property>
+</bean>
+
+
+<bean id="e1" class="beans.engine">
+<property name="modelyear" value="2011"></property>
+</bean>
+<bean id="e2" class="beans.engine">
+<property name="modelyear" value="2012"></property>
+</bean>
+<bean id="e3" class="beans.engine">
+<property name="modelyear" value="2013"></property>
+</bean>
+</beans>

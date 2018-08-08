@@ -1,0 +1,11 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+<bean id="e" class="beans.engine">
+ <property name="modelyear" value="2015"></property> 
+
+</bean>
+
+</beans>

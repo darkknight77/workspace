@@ -1,0 +1,20 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+<property name="staticMethod" value="beans.carFactory.setCarname"></property>
+<property name="arguments">
+<list>
+<value>beans.AUdi</value>
+<!-- <value>Benz</value> -->
+</list>
+
+</property>
+</bean>
+
+<bean id="cf" class="beans.carFactory" factory-method="getInstance"></bean>
+
+
+</beans>

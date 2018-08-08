@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+<bean id="c" class="beans.car" >
+<property name="carcolors">
+
+<util:list list-class="java.util.Vector">
+           <value>Black</value>
+           <value>White</value>
+           <value>Silver</value>
+</util:list>
+</property>
+
+<property name="carspeeds">
+
+<util:set set-class="java.util.TreeSet">
+           <value>Black</value>
+           <value>White</value>
+           <value>Silver</value>
+</util:set>
+
+</property>
+
+<property name="carrelease">
+
+<util:map map-class="java.util.Hashtable">
+
+<entry key="Audi" value="1945"></entry>
+     <entry key="BMW" value="1933"></entry>
+     <entry key="Posche" value="1899"></entry>
+             
+           
+</util:map>
+
+</property>
+
+</bean>
+</beans>

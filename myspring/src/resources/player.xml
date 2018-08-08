@@ -1,0 +1,14 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+<bean  id="p" class="com.pack.player">
+
+<property name="playerName" value="Kohli"></property>
+<property name="country" value="India"></property>
+
+
+</bean>
+
+
+</beans>

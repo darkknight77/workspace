@@ -1,0 +1,12 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+<bean id="t" class="beans.Test">
+ <property name="message" value="Great"></property> 
+<constructor-arg value=" derikk " index="0"></constructor-arg>
+ <constructor-arg value="555"  index="1"></constructor-arg> 
+</bean>
+
+</beans>

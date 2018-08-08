@@ -1,0 +1,14 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+
+<bean id="cf" class="beans.carFactory" >
+<property name="carname" value="beans.Benz"></property>
+
+</bean>
+<bean id="c" factory-bean="cf" factory-method="getInstance"></bean>
+
+
+</beans>

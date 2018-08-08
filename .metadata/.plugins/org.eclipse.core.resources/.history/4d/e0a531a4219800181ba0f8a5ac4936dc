@@ -1,0 +1,22 @@
+<%@ include file="common/header.jspf" %>
+<%@ include file="common/navbar.jspf" %>
+<div class="container">
+${message}
+
+<form method="post">
+<div class="form-group">
+<div class="input">
+<br/>
+<label>Name</label><input class="form-control" type="text" name="name"/> <br/>
+<label>Password </label><input  class="form-control" type="password" name="password"/>
+</div>
+<br/>
+<input type="submit"/>
+</div>
+
+</form>
+
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+		<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		</div>
+<%@ include file="common/footer.jspf" %>

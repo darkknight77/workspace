@@ -1,0 +1,15 @@
+package com.in28minutes.springboot.web.springbootfirstwebaplication.service;
+
+public class LoginService {
+
+	public boolean validateuser(String username,String password)
+	{
+		if(username.equals("dummy") && password.equals("dummy"))
+		return true;
+		
+		
+		return false;
+	}
+	
+	
+}

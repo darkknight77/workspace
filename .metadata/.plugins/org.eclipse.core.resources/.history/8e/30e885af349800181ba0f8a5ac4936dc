@@ -1,0 +1,5 @@
+package com.in28Minutes.mockito.Mockitodemo;
+
+public class SomeBusinessImpl {
+
+}

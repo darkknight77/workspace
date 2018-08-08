@@ -1,0 +1,29 @@
+package com.in28minutes.springboot.web.controller;
+
+import java.lang.reflect.Method;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.in28minutes.springboot.web.service.LoginService;
+
+@Controller
+public class LoginController {
+    @Autowired
+
+
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	private String getlogin() {
+		// TODO Auto-generated method stub
+		// System.out.println("Name :"+name);
+		// model.put("name", name);
+		return "Login";
+	}
+
+	
+}

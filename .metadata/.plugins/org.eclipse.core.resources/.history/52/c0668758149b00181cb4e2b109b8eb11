@@ -1,0 +1,22 @@
+package org.femoto.click;
+
+import java.util.Arrays;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		QuestService service= new QuestService();
+		
+		
+		System.out.println(service.getallquestions());
+		System.out.println(service.getquestion(3));
+		
+		Question question = new Question(++service.count, "what is this?","Fuck", Arrays.asList("Fuck","hai","bye"));
+		
+		service.addquestion(question);
+		System.out.println(service.getallquestions());
+}
+
+}
