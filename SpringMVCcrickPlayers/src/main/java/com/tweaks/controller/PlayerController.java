@@ -17,8 +17,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
-import com.tweaks.dao.PlayerDao;
+
 import com.tweaks.model.Player;
+import com.tweaks.service.PlayerService;
 
 
 
@@ -26,7 +27,7 @@ import com.tweaks.model.Player;
 public class PlayerController {
 
 	@Autowired
-	PlayerDao playerdao;
+	PlayerService playerService;
 	
 	
 	
@@ -34,8 +35,8 @@ public class PlayerController {
 	public String getplayers(ModelMap map)
 	{
     	List<Player> players=new ArrayList();
-		//Player player=playerdao.getPlayer(1);
-		 players=playerdao.getPlayers();
+		//Player player=playerService.getPlayer(1);
+		 players=playerService.getPlayers();
 		 System.out.println("players are :"+players);
 		//map.addAttribute("player",player);
 		map.put("players", players);
@@ -57,7 +58,7 @@ public class PlayerController {
     		return "/add-player";
     	}
     	
-    	playerdao.addPlayer(player);
+    	playerService.addPlayer(player);
     	
     	return "redirect:/list-players";
     }
@@ -66,7 +67,7 @@ public class PlayerController {
     public String showupdateplayer(ModelMap model,@RequestParam int id)
     {
     	model.put("id", id);
-    	Player player=playerdao.getPlayer(id);
+    	Player player=playerService.getPlayer(id);
     	model.put("player", player);
     	return "updatePlayer";
     }
@@ -81,7 +82,7 @@ public class PlayerController {
     	}
      System.out.println("im in post update"+id);
       System.out.println("modified "+player); 
-    	playerdao.updatePlayer(id,player);
+    	playerService.updatePlayer(id,player);
     	
     	return "redirect:/list-players";
     }
@@ -91,7 +92,7 @@ public class PlayerController {
     public String deleteplayer(@RequestParam int id)
     {
      System.out.println(id);
-    	playerdao.deletePlayer(id);
+    	playerService.deletePlayer(id);
     	
     	return "redirect:/list-players";
     }

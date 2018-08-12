@@ -2,23 +2,41 @@ package com.tweaks.service;
 
 import java.util.List;
 
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.tweaks.dao.PlayerDao;
 import com.tweaks.model.Player;
 
-
-
 @Service
+@Transactional
 public class PlayerService {
 	@Autowired
-	private SessionFactory sessionFactory;
+	private PlayerDao playerdao;
 
-	public List<Player> getdata() {
-		// TODO Auto-generated method stub
-
-		return sessionFactory.getCurrentSession().createQuery("From CRK_PLR2").list();
+	public void addPlayer(Player player) {
+		playerdao.addPlayer(player);
 	}
-	
+
+	public Player getPlayer(int id) {
+		return playerdao.getPlayer(id);
+	}
+
+	public List<Player> getPlayers() {
+		return playerdao.getPlayers();
+
+	}
+
+	public void updatePlayer(int id, Player player) {
+
+		playerdao.updatePlayer(id, player);
+
+	}
+
+	public void deletePlayer(int id) {
+
+		playerdao.deletePlayer(id);
+	}
+
 }

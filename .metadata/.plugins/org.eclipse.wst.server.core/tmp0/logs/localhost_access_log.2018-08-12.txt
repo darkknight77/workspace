@@ -166,3 +166,6 @@
 0:0:0:0:0:0:0:1 - - [12/Aug/2018:07:18:13 +0530] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 404 1110
 0:0:0:0:0:0:0:1 - - [12/Aug/2018:07:18:14 +0530] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 404 1110
 0:0:0:0:0:0:0:1 - - [12/Aug/2018:07:18:14 +0530] "GET /webjars/bootstrap-datepicker/1.0.1/js/bootstrap-datepicker.js HTTP/1.1" 404 1137
+127.0.0.1 - - [12/Aug/2018:08:01:11 +0530] "GET / HTTP/1.1" 404 1076
+0:0:0:0:0:0:0:1 - - [12/Aug/2018:08:01:32 +0530] "GET /SpringMVCcrickPlayers/ HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [12/Aug/2018:08:01:32 +0530] "GET /SpringMVCcrickPlayers/list-players HTTP/1.1" 500 5384

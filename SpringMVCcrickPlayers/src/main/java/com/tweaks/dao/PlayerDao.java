@@ -18,7 +18,7 @@ public class PlayerDao {
 private SessionFactory sessionFactory;	
 	
 	public void addPlayer(Player player){
-		Session session= null;
+		/*Session session= null;
 		try {
 			session = sessionFactory.openSession();
 			session.beginTransaction();
@@ -27,12 +27,13 @@ private SessionFactory sessionFactory;
 			session.getTransaction().commit();
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
+		}*/
 		
+		sessionFactory.getCurrentSession().saveOrUpdate(player);
 	}
 	
 	public Player getPlayer(int id){
-		Session session= null;
+		/*Session session= null;
 		Player p=null;
 		try {
 			session = sessionFactory.openSession();
@@ -43,13 +44,15 @@ private SessionFactory sessionFactory;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return p;
+		return p;*/
+		
+		return sessionFactory.getCurrentSession().get(Player.class, new Integer(id));
 		
 	}
 	
 	
 	public List<Player> getPlayers(){
-		Session session= null;
+		/*Session session= null;
 		List<Player> p=new ArrayList();
 		try {
 			session = sessionFactory.openSession();
@@ -61,13 +64,14 @@ private SessionFactory sessionFactory;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return p;
+		return p;*/
 		
+		return sessionFactory.getCurrentSession().createQuery("From CRK_PLR2").list();
 	}
 	
 	
 	public void updatePlayer(int id,Player player){
-		Session session= null;
+		/*Session session= null;
 
 		try {
 			session = sessionFactory.openSession();
@@ -79,11 +83,15 @@ private SessionFactory sessionFactory;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+*/	
+		
+	sessionFactory.getCurrentSession().saveOrUpdate(player);
+	
 	}
 
 	
 	public void deletePlayer(int id){
-		Session session= null;
+/*		Session session= null;
 		Player player=null;
 		try {
 			session = sessionFactory.openSession();
@@ -96,5 +104,8 @@ private SessionFactory sessionFactory;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+*/	
+	Player player=sessionFactory.getCurrentSession().get(Player.class, new Integer(id));
+		sessionFactory.getCurrentSession().delete(player);
 	}
 }
