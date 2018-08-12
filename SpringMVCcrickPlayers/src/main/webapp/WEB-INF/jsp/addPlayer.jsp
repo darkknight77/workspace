@@ -47,17 +47,13 @@
 <form:input type="text" path="totalScore" class="form-control" required="required"></form:input>
 </fieldset>
 </br>
-<button class="btn btn-primary" type="submit"> <a href=/add-player><font color="white">Update Player</font></a></button>
+<button class="btn btn-primary" type="submit"> <a href=add-player><font color="white">Update Player</font></a></button>
 </form:form>
-
-
-
-
-
-	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+	
+</div>
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script
 		src="webjars/bootstrap-datepicker/1.0.1/js/bootstrap-datepicker.js"></script>
-</div>
 </body>
 </html>

@@ -11,7 +11,7 @@
 	rel="stylesheet">
 </head>
 <body>
-${players}
+
 
 	<div class="container">
 		<table class="table table-striped">
@@ -37,10 +37,10 @@ ${players}
 						<th>${play.highScore}</th>
 						<th>${play.totalScore}</th>
 						<th><button class="btn btn-primary">
-								<a href="/update-player?id=${play.id}"><font color="white">Update</font></a>
+								<a href="update-player?id=${play.id}"><font color="white">Update</font></a>
 							</button></th>
 						<th><button class="btn btn-warning">
-								<a href="/delete-player?id=${play.id}"><font color="white">Delete</font></a>
+								<a href="delete-player?id=${play.id}"><font color="white">Delete</font></a>
 							</button></th>
 
 					</tr>
@@ -51,12 +51,14 @@ ${players}
 
 		</table>
 		<button type="button" class="btn btn-success">
-			<a href="/add-player"><font color="white">Add Player</font> </a>
+			<a href="add-player"><font color="white">Add Player</font> </a>
 		</button>
-		<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+		
+	</div>
+	
+	<script src="/webjars/jquery/1.9.1/jquery.min.js"></script>
 		<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script
-			src="webjars/bootstrap-datepicker/1.0.1/js/bootstrap-datepicker.js"></script>
-	</div>
+			src="/webjars/bootstrap-datepicker/1.0.1/js/bootstrap-datepicker.js"></script>
 </body>
 </html>
