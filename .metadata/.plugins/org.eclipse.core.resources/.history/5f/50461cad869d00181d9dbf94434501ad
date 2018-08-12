@@ -1,0 +1,37 @@
+package com.players.india.controller;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.players.india.dao.PlayerDao;
+import com.players.india.model.Player;
+import com.players.india.service.PlayerService;
+
+@Controller
+public class PlayerController {
+    @Autowired
+	PlayerDao playerdao;
+	
+    @RequestMapping(value = "/show", method = RequestMethod.GET)
+	public String show(ModelMap map)
+	{
+    	List<Player> players=new ArrayList<>();
+		Player player=playerdao.getPlayer(1);
+		 players=playerdao.getPlayers();
+		 System.out.println("players are :"+players);
+		//map.addAttribute("player",player);
+		map.put("players", players);
+		return "NewFile";
+	}
+	 
+		
+}

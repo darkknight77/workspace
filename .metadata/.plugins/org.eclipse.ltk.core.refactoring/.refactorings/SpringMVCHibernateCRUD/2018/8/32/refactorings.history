@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;SpringMVCHibernateCRUD&apos;&#x0D;&#x0A;- Original project: &apos;SpringMVCHibernateCRUD&apos;&#x0D;&#x0A;- Original element: &apos;SpringMVCHibernateCRUD/src/main/java/com.devglan&apos;" description="Delete element" element1="/src\/main\/java&lt;com.devglan" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1533955130127" subPackages="false" version="1.0"/>
+</session>

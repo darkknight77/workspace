@@ -1,0 +1,29 @@
+package com.players.india.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.players.india.model.Player;
+
+@Repository
+public class PlayerDao {
+@Autowired
+private SessionFactory sessionFactory;	
+	
+	public void createPlayer(Player player){
+		Session session= null;
+		try {
+			session = sessionFactory.openSession();
+			session.beginTransaction();
+			session.save(player);
+			System.out.println("Employee is created With Id::");
+			session.getTransaction().commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+}

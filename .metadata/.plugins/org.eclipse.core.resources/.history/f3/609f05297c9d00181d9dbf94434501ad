@@ -1,0 +1,65 @@
+package com.players.india.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.players.india.model.Player;
+
+@Repository
+public class PlayerDao {
+@Autowired
+private SessionFactory sessionFactory;	
+	
+	public void createPlayer(Player player){
+		Session session= null;
+		try {
+			session = sessionFactory.openSession();
+			session.beginTransaction();
+			session.save(player);
+			System.out.println("Player is created With Id::");
+			session.getTransaction().commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public Player getPlayer(int id){
+		Session session= null;
+		Player p=null;
+		try {
+			session = sessionFactory.openSession();
+			session.beginTransaction();
+			p=session.get(Player.class, new Integer(id));
+			System.out.println("Player is "+p);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return p;
+		
+	}
+	
+	
+	public List<Player> getPlayers(){
+		Session session= null;
+		List<Player> p=new ArrayList<>();
+		try {
+			session = sessionFactory.openSession();
+			session.beginTransaction();
+			//p=session.get(Player.class, new Integer(id));
+			p=sessionFactory.getCurrentSession().createQuery("From CRK_PLR").list();
+			System.out.println("Player is "+p);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return p;
+		
+	}
+}

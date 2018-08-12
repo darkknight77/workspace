@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sun Aug 12 06:32:02 IST 2018
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Latheef\\Downloads\\Video\\Compressed\\spring-framework-5.0.0.RELEASE-dist\\spring-framework-5.0.0.RELEASE\\libs\\spring-web-5.0.0.RELEASE.jar=WEB-INF/lib/spring-web-5.0.0.RELEASE.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Latheef\\Downloads\\Video\\Compressed\\spring-framework-5.0.0.RELEASE-dist\\spring-framework-5.0.0.RELEASE\\libs\\spring-web-5.0.0.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.0.0.RELEASE-sources.jar

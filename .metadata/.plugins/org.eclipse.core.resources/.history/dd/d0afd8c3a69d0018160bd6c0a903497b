@@ -1,0 +1,20 @@
+package com.tweaks;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class PlayerController {
+
+	
+	@RequestMapping(value="/",method=RequestMethod.GET)
+	@ResponseBody
+	private String show() {
+		// TODO Auto-generated method stub
+
+		
+	}
+	
+}

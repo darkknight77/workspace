@@ -8,7 +8,7 @@
 <form:hidden path="id"/>
 <fieldset class="form-group">
 <form:label path="desc">Description </form:label> 
-<form:input type="text"  path="desc" name="desc"  class="form-control" required="required"></form:input> 
+<form:input type="text"  path="desc" name="desc"   required="required"></form:input> 
 <form:errors path="desc" cssClass="text-warning"></form:errors>
 </fieldset>
 

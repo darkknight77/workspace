@@ -4,12 +4,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.in28Minutes.springboot"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="springboot-second-application"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -35,10 +33,14 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Latheef\Desktop\SpringMVCcrickPlayers2"/>
+			<item value="C:\Users\Latheef\workspace\SpringBootHibernateProject-master"/>
+			<item value="C:\Users\Latheef\workspace\CricketPlayers"/>
 			<item value="C:\Users\Latheef\workspace\Mockito-demo"/>
 			<item value="C:\Users\Latheef\workspace\spring-boot-first-web-aplication"/>
 		</list>
 		<list key="projectNameTemplate">
+			<item value="2"/>
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
 			<item value="[artifactId]-[version]"/>
@@ -48,6 +50,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -59,6 +62,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Latheef\workspace\CricketPlayers\CricketPlayers"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -71,10 +75,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.players.SpringMVCcrickPlayers"/>
+			<item value="com.players.india"/>
 		</list>
 		<list key="groupId">
+			<item value="com.players"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringMVCcrickPlayers"/>
+			<item value="india"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
