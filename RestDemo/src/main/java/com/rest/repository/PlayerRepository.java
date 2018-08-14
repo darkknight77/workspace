@@ -15,6 +15,6 @@ import com.rest.model.Player;
 
 public interface PlayerRepository extends  JpaRepository<Player, Integer>{
 
-/*	public Player findbyplayer_name(String player_name);*/
-
+public Player findById(int Id);
+public Player findByPlayerName(String name);
 }

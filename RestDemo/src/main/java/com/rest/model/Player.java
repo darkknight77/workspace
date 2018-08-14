@@ -16,7 +16,7 @@ public class Player {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	int id;
 	@Column(name="PlayerName")
-	String PlayerName;
+	String playerName;
 	@Column(name="Matches")
 	int totalMatches;
 	@Column(name="Hundreds")
@@ -33,7 +33,7 @@ public class Player {
 			int totalScore) {
 		super();
 		
-		this.PlayerName = playerName;
+		this.playerName = playerName;
 		this.totalMatches = totalMatches;
 		this.totalHundreds = totalHundreds;
 		this.totalFifties = totalFifties;
@@ -50,10 +50,10 @@ public class Player {
 		this.id = id;
 	}
 	public String getPlayerName() {
-		return PlayerName;
+		return playerName;
 	}
 	public void setPlayerName(String playerName) {
-		this.PlayerName = playerName;
+		this.playerName = playerName;
 	}
 	public int getTotalMatches() {
 		return totalMatches;
@@ -87,7 +87,7 @@ public class Player {
 	}
 	@Override
 	public String toString() {
-		return "Player [id=" + id + ", playerName=" + PlayerName + ", totalMatches=" + totalMatches + ", totalHundreds="
+		return "Player [id=" + id + ", playerName=" + playerName + ", totalMatches=" + totalMatches + ", totalHundreds="
 				+ totalHundreds + ", totalFifties=" + totalFifties + ", highScore=" + highScore + ", totalScore="
 				+ totalScore + "]";
 	}
