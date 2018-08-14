@@ -33,6 +33,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Latheef\workspace\springboot-rest-api-demo-master"/>
 			<item value="C:\Users\Latheef\Desktop\SpringMVCcrickPlayers2"/>
 			<item value="C:\Users\Latheef\workspace\SpringBootHibernateProject-master"/>
 			<item value="C:\Users\Latheef\workspace\CricketPlayers"/>
@@ -62,6 +63,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Latheef\workspace\SpringMvcTemplatee"/>
 			<item value="C:\Users\Latheef\workspace\CricketPlayers\CricketPlayers"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -75,13 +77,16 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.tweaks.SpringMvcTemplate"/>
 			<item value="com.players.SpringMVCcrickPlayers"/>
 			<item value="com.players.india"/>
 		</list>
 		<list key="groupId">
+			<item value="com.tweaks"/>
 			<item value="com.players"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringMvcTemplate"/>
 			<item value="SpringMVCcrickPlayers"/>
 			<item value="india"/>
 		</list>

@@ -1,9 +1,9 @@
 package com.tweaks.dao;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
-import org.hibernate.Session;
+
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -15,7 +15,8 @@ import com.tweaks.model.Player;
 @Repository
 public class PlayerDao {
 @Autowired
-private SessionFactory sessionFactory;	
+private SessionFactory sessionFactory;
+
 	
 	public void addPlayer(Player player){
 		/*Session session= null;
@@ -51,6 +52,7 @@ private SessionFactory sessionFactory;
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	public List<Player> getPlayers(){
 		/*Session session= null;
 		List<Player> p=new ArrayList();

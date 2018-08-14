@@ -2,4 +2,6 @@
 <modules>
   <module moduleId="org.eclipse.jst.j2ee.server:SpringMVCcrickPlayers" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:2" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:SpringMvcTemplate" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:SpringMvcTemplatee" serverId="Tomcat v8.0 Server at localhost"/>
 </modules>
