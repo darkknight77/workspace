@@ -1,0 +1,54 @@
+package com.datta.model;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Country")
+public class Country {
+
+	@Id
+	@GeneratedValue
+	int countryid;
+	String countryname;
+	
+	@OneToMany
+	Set<Player> players=new HashSet();
+
+	
+	public Country(int countryId, String name, Set<Player> players) {
+		super();
+		this.countryid = countryId;
+		this.countryname = name;
+		this.players = players;
+	}
+	public int getCountryId() {
+		return countryid;
+	}
+	public void setCountryId(int countryId) {
+		this.countryid = countryId;
+	}
+	public String getName() {
+		return countryname;
+	}
+	public void setName(String name) {
+		this.countryname = name;
+	}
+	public Set<Player> getPlayers() {
+		return players;
+	}
+	public void setPlayers(Set<Player> players) {
+		this.players = players;
+	}
+	
+	
+	
+}

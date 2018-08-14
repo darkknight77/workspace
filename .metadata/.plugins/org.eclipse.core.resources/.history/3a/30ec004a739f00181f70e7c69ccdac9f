@@ -1,0 +1,5 @@
+package com.datta.model;
+
+public class Player {
+
+}

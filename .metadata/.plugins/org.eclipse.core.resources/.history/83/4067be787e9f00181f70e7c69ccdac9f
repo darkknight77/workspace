@@ -1,0 +1,52 @@
+package com.datta.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Country")
+public class Country {
+
+	@Id
+	@GeneratedValue
+	int countryid;
+	String countryname;
+	
+	@OneToMany
+	List<Player> players=new ArrayList<>();
+	private String name;
+	
+	public Country(int countryId, String name, List<Player> players) {
+		super();
+		this.countryid = countryId;
+		this.name = name;
+		this.players = players;
+	}
+	public int getCountryId() {
+		return countryid;
+	}
+	public void setCountryId(int countryId) {
+		this.countryid = countryId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public List<Player> getPlayers() {
+		return players;
+	}
+	public void setPlayers(List<Player> players) {
+		this.players = players;
+	}
+	
+	
+	
+}

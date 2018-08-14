@@ -1,0 +1,11 @@
+package com.datta.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.datta.model.Country;
+
+public interface MyRepo extends JpaRepository<Country, Integer> {
+
+	
+	
+}
