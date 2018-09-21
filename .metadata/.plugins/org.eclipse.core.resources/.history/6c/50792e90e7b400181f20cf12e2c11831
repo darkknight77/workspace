@@ -1,0 +1,30 @@
+package com.jesse.pinkman;
+
+public class primeNumbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		boolean prime = false;
+		int i = 1, j = 2;
+		for (i = 1; i < 100; i++) {
+
+			prime = false;
+			for (j = 2; j < 10; j++) {
+
+				if (i % j != 0) {
+					prime = true;
+					break;
+				}
+
+			}
+			break;
+			
+		}
+		if (prime) {
+			System.out.println(i);
+		}
+
+	}
+
+}

@@ -33,6 +33,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Latheef\workspace\OneToMany"/>
+			<item value="C:\Users\Latheef\workspace\RestDemo"/>
 			<item value="C:\Users\Latheef\workspace\springboot-rest-api-demo-master"/>
 			<item value="C:\Users\Latheef\Desktop\SpringMVCcrickPlayers2"/>
 			<item value="C:\Users\Latheef\workspace\SpringBootHibernateProject-master"/>

@@ -29,9 +29,9 @@ public class Country {
 	Set<Player> players=new HashSet<>();
 
 	
-	public Country(int countryId, String name, Set<Player> players) {
+	public Country( String name, Set<Player> players) {
 		super();
-		this.countryid = countryId;
+		
 		this.countryname = name;
 		this.players = players;
 	}

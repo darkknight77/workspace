@@ -1,0 +1,19 @@
+package com.jesse.pinkman;
+
+public class FactorialOfProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int n=5,factorial = 1;
+		
+		for (int i = n; n > 1; i--) {
+			
+			factorial*=n*(n-1);
+			System.out.println(factorial);
+			n--;
+		}
+		System.out.println(factorial);
+	}
+
+}

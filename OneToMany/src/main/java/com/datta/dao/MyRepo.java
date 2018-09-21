@@ -7,7 +7,7 @@ import com.datta.model.Country;
 import com.datta.model.Player;
 
 @Repository
-public interface MyRepo extends JpaRepository<Country, Player> {
+public interface MyRepo extends JpaRepository<Country, Integer> {
 
 	
 	

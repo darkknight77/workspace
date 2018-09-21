@@ -21,9 +21,9 @@ public class Player {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Player(int playerId, String playerName, int highSCore ) {
+	public Player( String playerName, int highSCore ) {
 		super();
-		this.playerid = playerId;
+		
 		this.playername = playerName;
 		this.highscore = highSCore;
 		
