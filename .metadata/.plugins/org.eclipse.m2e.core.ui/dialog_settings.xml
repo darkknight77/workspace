@@ -79,15 +79,18 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.cereal.Students"/>
 			<item value="com.tweaks.SpringMvcTemplate"/>
 			<item value="com.players.SpringMVCcrickPlayers"/>
 			<item value="com.players.india"/>
 		</list>
 		<list key="groupId">
+			<item value="com.cereal"/>
 			<item value="com.tweaks"/>
 			<item value="com.players"/>
 		</list>
 		<list key="artifactId">
+			<item value="Students"/>
 			<item value="SpringMvcTemplate"/>
 			<item value="SpringMVCcrickPlayers"/>
 			<item value="india"/>
