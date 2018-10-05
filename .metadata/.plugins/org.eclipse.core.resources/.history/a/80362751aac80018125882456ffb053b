@@ -2,7 +2,6 @@ package org.element.dao;
 
 import javax.transaction.Transactional;
 
-import org.element.configuration.BeanConfig;
 import org.element.model.StudentModel;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +20,8 @@ public class StudentDao {
 		s.setSname("Ramanuja");
 		s.setPercentage(65);
 		s.setUniversity("JNTU");
-		BeanConfig bc= new BeanConfig();
 		
-		bc.getSessionFactory().getCurrentSession().saveOrUpdate(s);
-       //sf.getCurrentSession().save(s);
+       sf.getCurrentSession().save(s);
 		
 		
 	}
