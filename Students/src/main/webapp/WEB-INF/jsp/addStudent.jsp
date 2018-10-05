@@ -34,7 +34,7 @@
 
 
 </br>
-<button class="btn btn-primary" type="submit"> <a href=/addStudent><font color="white">Update Player</font></a></button>
+<button class="btn btn-primary" type="submit"> <a href=/add-Student><font color="white">Update Player</font></a></button>
 </form:form>
 
 

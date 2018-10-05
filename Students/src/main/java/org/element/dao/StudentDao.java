@@ -15,7 +15,11 @@ public class StudentDao {
 	private SessionFactory sf;
 	
    
-	
+	public void addstudent()
+	{
+		
+		
+	}
 		
 		
 		

@@ -24,7 +24,7 @@ public class StudentController {
 		// TODO Auto-generated method stub
 
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("Welcome");
+		mv.setViewName("Homepage");
 
 		return mv;
 
@@ -40,6 +40,7 @@ public class StudentController {
 		return mv;
 		
 	}
+
 	
 
 }
