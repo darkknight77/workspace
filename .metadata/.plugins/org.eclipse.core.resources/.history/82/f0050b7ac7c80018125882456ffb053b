@@ -35,21 +35,6 @@ public class StudentDao {
 		return students;
 		
 	}
-
-
-	public void addstudent(Student student) 
-	{
-		
-	try {
-		sf.getCurrentSession().saveOrUpdate(student);
-		
-		
-	} catch (Exception e) {
-		// TODO: handle exception
-		e.printStackTrace();
-	}
-	
-	}
 		
 		
 		
