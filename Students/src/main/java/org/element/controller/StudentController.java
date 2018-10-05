@@ -83,6 +83,19 @@ public class StudentController {
 	}
 	
 	@PostMapping("/update-student")
-	public String updatestudent(Student student)
+	public String updatestudent(ModelMap model,@Valid Student student,BindingResult result)
 	{
-		studentdao.updatestudent
+		if(result.hasErrors())
+		{
+			return "redirect:/addplayer";
+		}
+		
+		studentdao.updatestudent(student);
+		
+		
+		return "redirect:/welcome";
+		
+		
+	}
+
+}

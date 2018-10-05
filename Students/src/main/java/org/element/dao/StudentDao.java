@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
-
+@Transactional
 public class StudentDao {
     @Autowired
 	private SessionFactory sf;
@@ -37,7 +37,7 @@ public class StudentDao {
 		
 	}
 
-	@Transactional
+	
 	public void addstudent(Student student) 
 	{
 		
@@ -50,6 +50,33 @@ public class StudentDao {
 		e.printStackTrace();
 	}
 	
+	}
+
+	public void updatestudent(Student student) 
+	{
+		// TODO Auto-generated method stub
+	
+		try {
+			sf.getCurrentSession().saveOrUpdate(student);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+
+
+	public void deletestudent(Student student) {
+		// TODO Auto-generated method stub
+		
+		try {
+			sf.getCurrentSession().delete(student);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
 	}
 		
 		
