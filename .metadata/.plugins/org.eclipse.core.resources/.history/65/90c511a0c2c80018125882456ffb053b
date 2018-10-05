@@ -1,7 +1,5 @@
 package org.element.controller;
 
-import java.util.List;
-
 import javax.transaction.Transactional;
 
 import org.element.configuration.BeanConfig;
@@ -26,8 +24,6 @@ public class StudentController {
 		// TODO Auto-generated method stub
 
 		ModelAndView mv = new ModelAndView();
-		List<Student> students=studentdao.getstudents();
-		mv.addObject("students",students);
 		mv.setViewName("Homepage");
 
 		return mv;
