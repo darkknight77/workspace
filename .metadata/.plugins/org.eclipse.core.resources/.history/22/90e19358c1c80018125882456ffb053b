@@ -16,8 +16,8 @@
 			<caption>Student Data</caption>
 			<thead>
 				<tr>
-					<th>Id</th>
 					<th>Student Name</th>
+					<th>Id</th>
 					<th>Percentage</th>
 					<th>University</th>
 					

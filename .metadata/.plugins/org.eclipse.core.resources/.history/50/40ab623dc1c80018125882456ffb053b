@@ -13,23 +13,27 @@
 
 	<div class="container">
 		<table class="table table-striped">
-			<caption>Student Data</caption>
+			<caption>Statistics</caption>
 			<thead>
 				<tr>
-					<th>Id</th>
-					<th>Student Name</th>
-					<th>Percentage</th>
-					<th>University</th>
-					
+					<th>Player Name</th>
+					<th>Matches</th>
+					<th>Hundreds</th>
+					<th>Fifties</th>
+					<th>High Score</th>
+					<th>Total Runs</th>
+
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach items="${students}" var="student">
+				<c:forEach items="${players}" var="play">
 					<tr>
-						<th>${student.Id}</th>
-						<th>${student.Sname}</th>
-						<th>${student.Percentage}</th>
-						<th>${student.University}</th>
+						<th>${play.playerName}</th>
+						<th>${play.totalMatches}</th>
+						<th>${play.totalHundreds}</th>
+						<th>${play.totalFifties}</th>
+						<th>${play.highScore}</th>
+						<th>${play.totalScore}</th>
 						<th><button class="btn btn-primary">
 								<a href="/update-player?id=${play.id}"><font color="white">Update</font></a>
 							</button></th>
