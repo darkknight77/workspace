@@ -1,0 +1,5 @@
+package org.element.configuration;
+
+public class BeanConfig {
+
+}

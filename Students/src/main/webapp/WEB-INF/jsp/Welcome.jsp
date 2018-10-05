@@ -7,6 +7,8 @@
 <title>Working</title>
 </head>
 <body>
-HEllo Bucky
+Hello Bucky
+
+${student}
 </body>
 </html>

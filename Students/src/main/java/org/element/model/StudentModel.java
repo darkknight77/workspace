@@ -40,6 +40,11 @@ public class StudentModel {
 	public void setUniversity(String university) {
 		University = university;
 	}
+	@Override
+	public String toString() {
+		return "StudentModel [id=" + id + ", Sname=" + Sname + ", Percentage=" + Percentage + ", University="
+				+ University + "]";
+	}
 
 	
 	
