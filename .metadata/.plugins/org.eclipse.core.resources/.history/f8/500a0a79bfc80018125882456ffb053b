@@ -23,18 +23,18 @@
 
 <fieldset  class="form-group">
 <form:label path="percentage">Percentage</form:label></br>
-<form:input type="text" path="Percentage" class="form-control" required="required"></form:input>
+<form:input type="text" path="totalMatches" class="form-control" required="required"></form:input>
 </fieldset>
 
 
 <fieldset  class="form-group">
 <form:label path="University">University</form:label></br>
-<form:input type="text" path="University" class="form-control" required="required"></form:input>
+<form:input type="text" path="totalHundreds" class="form-control" required="required"></form:input>
 </fieldset>
 
 
 </br>
-<button class="btn btn-primary" type="submit"> <a href=/addStudent><font color="white">Update Player</font></a></button>
+<button class="btn btn-primary" type="submit"> <a href=/add-player><font color="white">Update Player</font></a></button>
 </form:form>
 
 
