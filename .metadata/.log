@@ -6702,3 +6702,6 @@ java.util.ConcurrentModificationException
 
 !ENTRY org.eclipse.wst.server.discovery 1 0 2018-10-05 20:06:29.242
 !MESSAGE cacheFile=file:/C:/Users/Latheef/.eclipse/org.eclipse.platform_4.5.2_1709980481_win32_win32_x86_64/configuration/org.eclipse.wst.server.discovery/serverAdapterSitesDetails.xml
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-10-05 20:07:34.216
+!MESSAGE cacheFile=file:/C:/Users/Latheef/.eclipse/org.eclipse.platform_4.5.2_1709980481_win32_win32_x86_64/configuration/org.eclipse.wst.server.discovery/serverAdapterSitesDetails.xml
