@@ -21,10 +21,10 @@ public class StudentDao {
 		s.setSname("Ramanuja");
 		s.setPercentage(65);
 		s.setUniversity("JNTU");
-		BeanConfig bc= new BeanConfig();
 		
-		bc.getSessionFactory().getCurrentSession().saveOrUpdate(s);
-       //sf.getCurrentSession().save(s);
+		
+		
+		
 		
 		
 	}
