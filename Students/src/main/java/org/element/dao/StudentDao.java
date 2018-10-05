@@ -14,74 +14,56 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Transactional
 public class StudentDao {
-    @Autowired
+	@Autowired
 	private SessionFactory sf;
-	
-   
-	public List<Student> getstudents()
-	{
-		Session s=null;
-		List<Student> students=null;
+
+	public List<Student> getstudents() {
+		Session s = null;
+		List<Student> students = null;
 		try {
-			s=sf.openSession();
-			
-		students=s.createQuery("From STU_DATA").list();	
-			
-		} 
-		catch (Exception e) {
+			s = sf.openSession();
+
+			students = s.createQuery("From STU_DATA").list();
+
+		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-		
+
 		return students;
-		
+
 	}
 
-	
-	public void addstudent(Student student) 
-	{
-		
-	try {
-		sf.getCurrentSession().saveOrUpdate(student);
-		
-		
-	} catch (Exception e) {
-		// TODO: handle exception
-		e.printStackTrace();
-	}
-	
-	}
+	public void addstudent(Student student) {
 
-	public void updatestudent(Student student) 
-	{
-		// TODO Auto-generated method stub
-	
 		try {
 			sf.getCurrentSession().saveOrUpdate(student);
-			
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+
+	}
+
+	public void updatestudent(Student student) {
+		// TODO Auto-generated method stub
+
+		try {
+			sf.getCurrentSession().saveOrUpdate(student);
+
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		
+
 	}
-
-
+	
+	
 	public void deletestudent(Student student) {
 		// TODO Auto-generated method stub
-		
-		try {
-			
-			sf.getCurrentSession().delete(student);
-			
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		
-		
-	}
-		
-		
-		
+
+		sf.getCurrentSession().delete(student);
+
 	}
 
+}

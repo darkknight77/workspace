@@ -108,7 +108,6 @@ public class StudentController {
 		{
 			if(id==student.getId())
 			{
-				System.out.println(student);
 			  	studentdao.deletestudent(student);
 			  
 			}
