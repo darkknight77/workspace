@@ -30,7 +30,7 @@ public class StudentController {
 		mv.setViewName("Welcome");
 		mv.addObject("student", s);
 		
-		sessionFactory.getCurrentSession().save(s);
+		sessionFactory.getCurrentSession().saveOrUpdate(s);
 		
 		return mv;
 
