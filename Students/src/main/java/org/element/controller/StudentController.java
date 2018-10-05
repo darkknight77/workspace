@@ -2,6 +2,8 @@ package org.element.controller;
 
 import javax.transaction.Transactional;
 
+import org.element.configuration.BeanConfig;
+import org.element.dao.StudentDao;
 import org.element.model.StudentModel;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class StudentController {
   
-	@Autowired
-  private SessionFactory sessionFactory;
+ private StudentDao studentdao;
 	
 	@GetMapping("/welcome")
 	@Transactional
@@ -29,9 +30,7 @@ public class StudentController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("Welcome");
 		mv.addObject("student", s);
-		
-		sessionFactory.getCurrentSession().save(s);
-		
+				
 		return mv;
 
 	}
