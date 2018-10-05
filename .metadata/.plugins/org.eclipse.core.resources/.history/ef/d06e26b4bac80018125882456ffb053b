@@ -1,7 +1,5 @@
 package org.element.dao;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.transaction.Transactional;
 
 import org.element.configuration.BeanConfig;
@@ -14,11 +12,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class StudentDao {
     @Autowired
-	//private SessionFactory sf;
-    
-    private EntityManagerFactory entityManagerFactory;
+	private SessionFactory sf;
 	
-    SessionFactory sf = entityManagerFactory.unwrap(SessionFactory.class);
     Session s;
 	public StudentModel psv() {
 		// TODO Auto-generated method stub
