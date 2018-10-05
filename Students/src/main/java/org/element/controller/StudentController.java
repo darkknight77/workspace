@@ -8,7 +8,7 @@ import javax.validation.Valid;
 import org.element.configuration.BeanConfig;
 import org.element.dao.StudentDao;
 import org.element.model.Student;
-
+import org.element.service.StudentService;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,6 +24,8 @@ public class StudentController {
 
 	@Autowired
 	private StudentDao studentdao;
+	@Autowired
+	private StudentService service;
 
 	@GetMapping("/welcome")
 	public ModelAndView data() {
@@ -108,7 +110,7 @@ public class StudentController {
 		{
 			if(id==student.getId())
 			{
-			  	studentdao.deletestudent(student);
+			  	service.deletestudent(student);
 			  
 			}
 		}
