@@ -11,40 +11,46 @@
 	rel="stylesheet">
 </head>
 <body>
-<div class="container">
-<h1>Add Student</h1>
-<form:form method="post" modelAttribute="student">
-<fieldset  class="form-group">
-<form:hidden path="id"/>
-<form:label path="Sname">Student Name</form:label></br>
-<form:input type="text" path="Sname" class="form-control" required="required"></form:input>
-</fieldset>
+	<div class="container">
+		<h1>Add Student</h1>
+		<form:form method="post" modelAttribute="student">
+			<fieldset class="form-group">
+				<form:hidden path="id" />
+				<form:label path="Sname">Student Name</form:label>
+				</br>
+				<form:input type="text" path="Sname" class="form-control"
+					required="required"></form:input>
+			</fieldset>
 
 
-<fieldset  class="form-group">
-<form:label path="percentage">Percentage</form:label></br>
-<form:input type="text" path="Percentage" class="form-control" required="required"></form:input>
-</fieldset>
+			<fieldset class="form-group">
+				<form:label path="percentage">Percentage</form:label>
+				</br>
+				<form:input type="text" path="Percentage" class="form-control"
+					required="required"></form:input>
+			</fieldset>
 
 
-<fieldset  class="form-group">
-<form:label path="University">University</form:label></br>
-<form:input type="text" path="University" class="form-control" required="required"></form:input>
-</fieldset>
+			<fieldset class="form-group">
+				<form:label path="University">University</form:label>
+				</br>
+				<form:input type="text" path="University" class="form-control"
+					required="required"></form:input>
+			</fieldset>
 
 
-</br>
-<button class="btn btn-primary" type="submit"> <a href=/add-Student><font color="white">Update Player</font></a></button>
-</form:form>
+			</br>
+			<button class="btn btn-primary" type="submit">
+				<a href=/add-Student><font color="white">Add/Update Student</font></a>
+			</button>
+		</form:form>
 
 
 
-
-
-	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script
-		src="webjars/bootstrap-datepicker/1.0.1/js/bootstrap-datepicker.js"></script>
-</div>
+		<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+		<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script
+			src="webjars/bootstrap-datepicker/1.0.1/js/bootstrap-datepicker.js"></script>
+	</div>
 </body>
 </html>

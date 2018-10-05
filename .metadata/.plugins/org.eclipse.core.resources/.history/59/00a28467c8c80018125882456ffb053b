@@ -48,7 +48,7 @@ public class StudentController {
 		
 	}
 
-	@PostMapping("/add-student")
+	/*@PostMapping("/add-student")
 	public String addstudent(ModelMap model,@Valid Student student,BindingResult result)
 	{
 		if(result.hasErrors())
@@ -59,10 +59,10 @@ public class StudentController {
 		studentdao.addstudent(student);
 		
 		
-		return "redirect:/welcome";
+		return "";
 		
 	}
 	
-	
+	*/
 
 }

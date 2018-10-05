@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
-
 public class StudentDao {
     @Autowired
 	private SessionFactory sf;
@@ -37,7 +36,7 @@ public class StudentDao {
 		
 	}
 
-	@Transactional
+
 	public void addstudent(Student student) 
 	{
 		
