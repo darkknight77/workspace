@@ -1,7 +1,5 @@
 package org.element.dao;
 
-import java.util.List;
-
 import javax.transaction.Transactional;
 
 import org.element.configuration.BeanConfig;
@@ -17,22 +15,9 @@ public class StudentDao {
 	private SessionFactory sf;
 	
    
-	public List<Student> getstudents()
+	public void addstudent()
 	{
-		Session s=null;
-		List<Student> students=null;
-		try {
-			s=sf.openSession();
-			
-		students=s.createQuery("From STU_DATA").list();	
-			
-		} 
-		catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-		}
 		
-		return students;
 		
 	}
 		
