@@ -98,4 +98,24 @@ public class StudentController {
 		
 	}
 
+	@GetMapping("/delete-student")
+	public String deletestudent(ModelMap model,@RequestParam int id)
+	{
+		
+		List<Student> students=studentdao.getstudents();
+		
+		for(Student student:students)
+		{
+			if(id==student.getId())
+			{
+				System.out.println(student);
+			  	studentdao.deletestudent(student);
+			  
+			}
+		}
+		return "redirect:/welcome";
+		
+	}
+	
+	
 }

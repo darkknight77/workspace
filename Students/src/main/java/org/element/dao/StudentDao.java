@@ -70,7 +70,9 @@ public class StudentDao {
 		// TODO Auto-generated method stub
 		
 		try {
+			
 			sf.getCurrentSession().delete(student);
+			
 			
 		} catch (Exception e) {
 			// TODO: handle exception
