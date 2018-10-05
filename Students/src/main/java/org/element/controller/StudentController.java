@@ -23,16 +23,13 @@ public class StudentController {
 		// TODO Auto-generated method stub
 
 		StudentModel s = new StudentModel();
-		s.setId(101);
-		s.setSname("Ramanuja");
-		s.setPercentage(65);
-		s.setUniversity("JNTU");
-
+		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("Welcome");
-		mv.addObject("student", s);
 		
-		studentdao.psv();
+	s=studentdao.psv();
+	mv.addObject("student", s);
+	
 		
 		return mv;
 
