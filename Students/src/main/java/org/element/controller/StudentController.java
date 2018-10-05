@@ -16,6 +16,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -63,6 +64,22 @@ public class StudentController {
 		
 	}
 	
-	
+	@GetMapping("/update-student")
+	public String updatestudent(ModelMap model,@RequestParam int id)
+	{
+		System.out.println("bkjjj");
+		List<Student> students=studentdao.getstudents();
+		
+		for(Student student:students)
+		{
+			if(id==student.getId())
+			{
+			  model.put("student", student);	
+			  return "addStudent";
+			}
+		}
+		return "";
+		
+	}
 
 }
