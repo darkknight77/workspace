@@ -9,30 +9,34 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class StudentController {
-  
-@Autowired	
- private StudentDao studentdao;
-	
+
+	@Autowired
+	private StudentDao studentdao;
+
 	@GetMapping("/welcome")
-	@Transactional
 	public ModelAndView data() {
 		// TODO Auto-generated method stub
 
-		StudentModel s = new StudentModel();
-		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("Welcome");
-		
-	s=studentdao.psv();
-	mv.addObject("student", s);
-	
-		
+
 		return mv;
 
 	}
+	
+	@GetMapping("/addStudent")
+	public ModelAndView addStudent()
+	{
+		ModelAndView mv= new ModelAndView();
+		mv.setViewName("addStudent");
+		return mv;
+		
+	}
+	
 
 }
