@@ -4,7 +4,8 @@ import javax.transaction.Transactional;
 
 import org.element.configuration.BeanConfig;
 import org.element.dao.StudentDao;
-import org.element.model.StudentModel;
+import org.element.model.Student;
+
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,6 +34,8 @@ public class StudentController {
 	public ModelAndView addStudent()
 	{
 		ModelAndView mv= new ModelAndView();
+		Student s= new Student();
+		mv.addObject("student",s);
 		mv.setViewName("addStudent");
 		return mv;
 		

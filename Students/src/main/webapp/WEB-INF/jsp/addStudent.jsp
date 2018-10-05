@@ -12,40 +12,27 @@
 </head>
 <body>
 <div class="container">
-<h1>Add Player</h1>
-<form:form method="post" modelAttribute="player">
+<h1>Add Student</h1>
+<form:form method="post" modelAttribute="student">
 <fieldset  class="form-group">
 <form:hidden path="id"/>
-<form:label path="playerName">Player Name</form:label></br>
-<form:input type="text" path="playerName" class="form-control" required="required"></form:input>
+<form:label path="Sname">Student Name</form:label></br>
+<form:input type="text" path="SName" class="form-control" required="required"></form:input>
 </fieldset>
 
 
 <fieldset  class="form-group">
-<form:label path="totalMatches">Matches</form:label></br>
+<form:label path="percentage">Percentage</form:label></br>
 <form:input type="text" path="totalMatches" class="form-control" required="required"></form:input>
 </fieldset>
 
 
 <fieldset  class="form-group">
-<form:label path="totalHundreds">Hundreds</form:label></br>
+<form:label path="University">University</form:label></br>
 <form:input type="text" path="totalHundreds" class="form-control" required="required"></form:input>
 </fieldset>
 
-<fieldset  class="form-group">
-<form:label path="totalFifties">Fifties</form:label></br>
-<form:input type="text" path="totalFifties" class="form-control" required="required"></form:input>
-</fieldset>
 
-<fieldset  class="form-group">
-<form:label path="highScore">HighScore</form:label></br>
-<form:input type="text" path="highScore" class="form-control" required="required"></form:input>
-</fieldset>
-
-<fieldset  class="form-group">
-<form:label path="totalScore">Total Runs</form:label></br>
-<form:input type="text" path="totalScore" class="form-control" required="required"></form:input>
-</fieldset>
 </br>
 <button class="btn btn-primary" type="submit"> <a href=/add-player><font color="white">Update Player</font></a></button>
 </form:form>
