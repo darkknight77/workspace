@@ -100,13 +100,20 @@ public class StudentController {
 		
 	}
 
-	@GetMapping("/delete-student")
+	@PostMapping("/delete-student")
 	public String deletestudent(ModelMap model,@RequestParam int id)
 	{
-		Student student=studentdao.getstudent(id);
 		
-		studentdao.deletestudent(student);
+		List<Student> students=studentdao.getstudents();
 		
+		for(Student student:students)
+		{
+			if(id==student.getId())
+			{
+			  	service.deletestudent(student);
+			  
+			}
+		}
 		return "redirect:/welcome";
 		
 	}
