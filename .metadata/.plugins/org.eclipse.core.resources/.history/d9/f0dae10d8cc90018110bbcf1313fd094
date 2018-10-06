@@ -18,12 +18,12 @@ public class StudentDao {
 	private SessionFactory sf;
 
 	public List<Student> getstudents() {
-		
+		Session s = null;
 		List<Student> students = null;
 		try {
-			
+			s = sf.openSession();
 
-			students = sf.getCurrentSession().createQuery("From STU_DATA").list();
+			students = s.createQuery("From STU_DATA").list();
 
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -70,7 +70,16 @@ public class StudentDao {
 	public void deletestudent(Student student) {
 		// TODO Auto-generated method stub
 
-		sf.getCurrentSession().delete(student);
+		Session s=null;
+		
+		try
+		{
+			s=sf.openSession();
+			s.delete(student);
+		}catch(Exception e)
+		{
+			
+		}
 
 	}
 
