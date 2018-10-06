@@ -59,14 +59,6 @@ public class StudentDao {
 	}
 	
 	
-	public Student  getstudent(int id)
-	{
-		Student student=sf.getCurrentSession().get(Student.class, id); 
-		
-		return student;
-	}
-	
-	
 	public void deletestudent(Student student) {
 		// TODO Auto-generated method stub
 
