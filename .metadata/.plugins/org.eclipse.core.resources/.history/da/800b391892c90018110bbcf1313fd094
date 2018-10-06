@@ -103,7 +103,8 @@ public class StudentController {
 	@GetMapping("/delete-student")
 	public String deletestudent(@RequestParam int id)
 	{
-
+		
+		
 		studentdao.deletestudent(id);
 		
 		return "redirect:/welcome";
