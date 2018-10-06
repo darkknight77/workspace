@@ -1,26 +1,19 @@
 package org.element.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.CollectionId;
-
 @Entity(name="STU_DATA")
 @Table(name="STU_DATA")
 public class Student {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="id")
-    private int id;
-    @Column(name="sname")
+	private int id;
 	private String Sname;
-    @Column(name="percentage")
 	private int Percentage ;
-    @Column(name="university")
 	private String University;
 	
 	public int getId() {

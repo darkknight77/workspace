@@ -11673,3 +11673,18 @@ java.util.ConcurrentModificationException: null
 2018-10-06 23:01:39,262 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-10-06 23:01:39,265 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-10-06 23:01:39,267 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Latheef\workspace\Students\src\test\resources
+2018-10-06 23:10:31,898 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @5059305ms
+2018-10-06 23:10:32,686 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2018-10-06 23:10:32,877 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7f1280c7{/help,null,AVAILABLE}
+2018-10-06 23:10:32,939 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@6823a6c4{HTTP/1.1}{127.0.0.1:49694}
+2018-10-06 23:10:32,942 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @5060349ms
+2018-10-06 23:12:14,069 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 23:12:14,072 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-06 23:12:14,101 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-06 23:12:14,109 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 23:12:14,112 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Latheef\workspace\Students\src\test\resources
+2018-10-06 23:14:07,808 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 23:14:07,815 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-06 23:14:07,823 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-06 23:14:07,830 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 23:14:07,830 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Latheef\workspace\Students\src\test\resources
