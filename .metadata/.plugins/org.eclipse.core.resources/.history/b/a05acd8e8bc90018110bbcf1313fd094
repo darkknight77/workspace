@@ -33,8 +33,6 @@ public class StudentController {
 
 		ModelAndView mv = new ModelAndView();
 		List<Student> students=studentdao.getstudents();
-	System.out.println("###############################");
-		System.out.println(students);
 		mv.addObject("students",students);
 		mv.setViewName("Homepage");
 
