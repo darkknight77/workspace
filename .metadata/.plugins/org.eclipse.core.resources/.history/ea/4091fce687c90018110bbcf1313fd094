@@ -100,7 +100,7 @@ public class StudentController {
 		
 	}
 
-	@PostMapping("/delete-student")
+	@GetMapping("/delete-student")
 	public String deletestudent(ModelMap model,@RequestParam int id)
 	{
 		
