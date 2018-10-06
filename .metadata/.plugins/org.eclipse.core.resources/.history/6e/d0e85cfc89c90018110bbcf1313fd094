@@ -70,16 +70,8 @@ public class StudentDao {
 	public void deletestudent(Student student) {
 		// TODO Auto-generated method stub
 
-		Session s=null;
 		
-		try
-		{
-			s=sf.openSession();
-			s.delete(student);
-		}catch(Exception e)
-		{
-			
-		}
+		sf.getCurrentSession().delete(student);
 
 	}
 
