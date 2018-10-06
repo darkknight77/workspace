@@ -9,10 +9,10 @@ public class StudentService {
     @Autowired
 	StudentDao studentDao;
 	
-	public void deletestudent(int id) {
+	public void deletestudent(Student student) {
 		// TODO Auto-generated method stub
 
-		studentDao.deletestudent(id);
+		studentDao.deletestudent(student);
 		
 
 	}

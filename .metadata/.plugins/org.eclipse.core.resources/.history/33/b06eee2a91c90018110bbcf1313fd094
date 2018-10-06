@@ -103,9 +103,9 @@ public class StudentController {
 	@GetMapping("/delete-student")
 	public String deletestudent(@RequestParam int id)
 	{
+		Student student=studentdao.getstudent(id);
 		
-		
-		studentdao.deletestudent(id);
+		studentdao.deletestudent(student);
 		
 		return "redirect:/welcome";
 		
