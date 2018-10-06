@@ -11738,3 +11738,5 @@ java.util.ConcurrentModificationException: null
 2018-10-06 23:33:14,793 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-10-06 23:33:14,801 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-10-06 23:33:14,802 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Latheef\workspace\Students\src\test\resources
+2018-10-06 23:53:39,474 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@6823a6c4{HTTP/1.1}{127.0.0.1:0}
+2018-10-06 23:53:39,548 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7f1280c7{/help,null,UNAVAILABLE}
