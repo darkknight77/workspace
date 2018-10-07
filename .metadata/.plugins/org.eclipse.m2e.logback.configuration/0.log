@@ -11958,3 +11958,8 @@ java.util.ConcurrentModificationException: null
 2018-10-07 23:06:42,342 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-10-07 23:06:42,369 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-10-07 23:06:42,378 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Latheef\workspace\StudentsMvc\src\test\resources
+2018-10-07 23:08:18,990 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-07 23:08:18,999 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-07 23:08:19,021 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-07 23:08:19,028 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-07 23:08:19,032 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Latheef\workspace\Students\src\test\resources
