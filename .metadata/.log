@@ -7106,3 +7106,9 @@ org.eclipse.jst.j2ee.commonarchivecore.internal.exception.EmptyResourceException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-07 23:19:04.304
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-07 23:56:00.894
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-07 23:56:00.907
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
