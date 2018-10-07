@@ -12249,3 +12249,11 @@ java.util.ConcurrentModificationException: null
 2018-10-08 02:46:31,959 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-10-08 02:46:31,963 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-10-08 02:46:31,968 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Latheef\workspace\StudentsMvc\src\test\resources
+2018-10-08 02:49:37,205 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 02:49:37,211 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-08 02:49:37,215 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 02:49:37,222 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Latheef\workspace\StudentsMvc\src\test\resources
+2018-10-08 02:51:28,074 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 02:51:28,096 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-08 02:51:28,139 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 02:51:28,241 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Latheef\workspace\StudentsMvc\src\test\resources
