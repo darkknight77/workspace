@@ -25,7 +25,7 @@ public class StudentController {
 	@Autowired
 	private StudentService service;
 
-	@GetMapping("/list-students")
+	@GetMapping("/")
 	public ModelAndView data() {
 		// TODO Auto-generated method stub
 
@@ -60,7 +60,7 @@ public class StudentController {
 		service.addstudent(student);
 		
 		
-		return "redirect:/list-students";
+		return "redirect:welcome";
 		
 	}
 	
@@ -87,13 +87,13 @@ public class StudentController {
 	{
 		if(result.hasErrors())
 		{
-			return "redirect:/addplayer";
+			return "redirect:addplayer";
 		}
 		
 		service.updatestudent(student);
 		
 		
-		return "redirect:/list-students";
+		return "redirect:welcome";
 		
 		
 	}
@@ -104,7 +104,7 @@ public class StudentController {
 
 		service.deletestudent(id);
 		
-		return "redirect:/list-students";
+		return "redirect:welcome";
 		
 	}
 	

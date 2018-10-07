@@ -8055,3 +8055,9 @@ org.eclipse.core.runtime.OperationCanceledException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-08 04:15:04.121
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-08 04:20:37.818
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-08 04:20:37.832
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
