@@ -2,8 +2,6 @@ package org.element.controller;
 
 import java.util.List;
 
-import javax.validation.Valid;
-
 import org.element.dao.StudentDao;
 import org.element.model.Student;
 import org.element.service.StudentService;
@@ -51,7 +49,7 @@ public class StudentController {
 	}
 
 	@PostMapping("/add-student")
-	public String addstudent(ModelMap model,@Valid Student student,BindingResult result)
+	public String addstudent(ModelMap model,@Validated Student student,BindingResult result)
 	{
 		if(result.hasErrors())
 		{
@@ -84,7 +82,7 @@ public class StudentController {
 	}
 	
 	@PostMapping("/update-student")
-	public String updatestudent(ModelMap model,@Valid Student student,BindingResult result)
+	public String updatestudent(ModelMap model,@Validated Student student,BindingResult result)
 	{
 		if(result.hasErrors())
 		{
