@@ -13,12 +13,14 @@ public class StudentService {
 	StudentDao studentdao;
 
 	
-public List<Student> getstudents() {
+public List<Student> getstudents(List<Student> students) {
 		
-	List<Student> students=studentdao.getstudents();		
+		
+		students=studentdao.getstudents();
 
-	return students;
-}
+		return students;
+
+	}
 	
 	public void addstudent(Student student) {
 

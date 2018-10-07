@@ -54,13 +54,13 @@ public class StudentController {
 	{
 		if(result.hasErrors())
 		{
-			return "redirect:addplayer";
+			return "redirect:/addplayer";
 		}
 		
 		service.addstudent(student);
 		
 		
-		return "redirect:welcome";
+		return "redirect:/welcome";
 		
 	}
 	
@@ -87,13 +87,13 @@ public class StudentController {
 	{
 		if(result.hasErrors())
 		{
-			return "redirect:addplayer";
+			return "redirect:/addplayer";
 		}
 		
 		service.updatestudent(student);
 		
 		
-		return "redirect:welcome";
+		return "redirect:/welcome";
 		
 		
 	}
@@ -104,7 +104,7 @@ public class StudentController {
 
 		service.deletestudent(id);
 		
-		return "redirect:welcome";
+		return "redirect:/welcome";
 		
 	}
 	
