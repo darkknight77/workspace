@@ -25,7 +25,7 @@
              <property name="suffix" value=".jsp"></property>
        </bean>
 
-   <!--                               Data Source
+                                 Data Source
                                  
        <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
              <property name="driverClassName" value="${database.driver}"></property>
@@ -47,7 +47,7 @@
                              <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
                       </props>
               </property>
-              <property name="packagesToScan" value="com.angry.model"></property>
+              <property name="packagesToScan" value="org.element.model"></property>
        </bean>
 
                                     Transaction Manager
@@ -57,4 +57,4 @@
        </bean>
                                       
        <tx:annotation-driven transaction-manager="transactionManager"/>
- --></beans>
+</beans>

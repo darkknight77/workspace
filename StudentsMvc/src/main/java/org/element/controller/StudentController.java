@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -48,7 +49,7 @@ public class StudentController {
 	}
 
 	@PostMapping("/add-student")
-	public String addstudent(ModelMap model,@Valid Student student,BindingResult result)
+	public String addstudent(ModelMap model,@Validated Student student,BindingResult result)
 	{
 		if(result.hasErrors())
 		{
@@ -81,7 +82,7 @@ public class StudentController {
 	}
 	
 	@PostMapping("/update-student")
-	public String updatestudent(ModelMap model,@Valid Student student,BindingResult result)
+	public String updatestudent(ModelMap model,@Validated Student student,BindingResult result)
 	{
 		if(result.hasErrors())
 		{
