@@ -11,10 +11,6 @@
            <servlet-class>org.</servlet-class> 
   
   </servlet>
-  <servlet-mapping>
-                   <servlet-name>Spring</servlet-name>
-                   <url-pattern>/</url-pattern>
-  </servlet-mapping>
   
   
 </web-app>
