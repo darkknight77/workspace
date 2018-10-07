@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class StudentController {
 
-	@GetMapping("/")
+	@GetMapping("/home")
 	private String welcome() {
 		// TODO Auto-generated method stub
 
-		return "welcome";
+		return "Welcome";
 		
 	}
 	

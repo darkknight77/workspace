@@ -25,7 +25,7 @@
              <property name="suffix" value=".jsp"></property>
        </bean>
 
-                                 <!-- Data Source-->
+   <!--                               Data Source
                                  
        <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
              <property name="driverClassName" value="${database.driver}"></property>
@@ -34,7 +34,7 @@
              <property name="password" value="${database.password}"></property>
        </bean>
 
-                                  <!-- Session Factory -->
+                                  Session Factory
 
        <bean  id="sessionFactory"
               class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
@@ -50,11 +50,11 @@
               <property name="packagesToScan" value="com.angry.model"></property>
        </bean>
 
-                                    <!-- Transaction Manager-->
+                                    Transaction Manager
                                     
        <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
               <property name="sessionFactory" ref="sessionFactory"></property>       
        </bean>
                                       
        <tx:annotation-driven transaction-manager="transactionManager"/>
-</beans>
+ --></beans>
