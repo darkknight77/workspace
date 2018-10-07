@@ -48,11 +48,15 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Latheef/Downloads/hibernate-jpa-2.0-api-1.0.1.Final.jar">
+	<classpathentry kind="lib" path="C:/Users/Latheef/workspace/SpringMVC/WebContent/WEB-INF/lib/spring-beans-5.0.0.RELEASE.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Latheef/workspace/SpringMVC/WebContent/WEB-INF/lib/spring-beans-5.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Latheef/Downloads/hibernate-jpa-2.1-api-1.0.2.Final.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

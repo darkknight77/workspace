@@ -24,7 +24,7 @@ public class StudentController {
 	@Autowired
 	private StudentService service;
 
-	@GetMapping("/")
+	@GetMapping("/welcome")
 	public ModelAndView data() {
 		// TODO Auto-generated method stub
 
