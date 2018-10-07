@@ -22,12 +22,6 @@ public class StudentService {
 		studentdao.updatestudent(student);
 
 	}
-	public Student  getstudent(int id)
-	{
-		Student student=studentdao.getstudent(id); 
-		
-		return student;
-	}
 
 	public void deletestudent(int id) {
 		// TODO Auto-generated method stub
