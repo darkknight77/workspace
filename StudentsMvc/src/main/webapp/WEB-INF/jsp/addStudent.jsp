@@ -41,7 +41,7 @@
 
 			</br>
 			<button class="btn btn-primary" type="submit">
-				<a href=/add-Student><font color="white">Add Student</font></a>
+				<a href=add-Student><font color="white">Add Student</font></a>
 			</button>
 		</form:form>
 

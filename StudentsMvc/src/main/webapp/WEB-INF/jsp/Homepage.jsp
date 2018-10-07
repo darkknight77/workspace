@@ -31,10 +31,10 @@
 						<th>${student.percentage}</th>
 						<th>${student.university}</th>
 						<th><button class="btn btn-primary">
-								<a href="/update-student?id=${student.id}"><font color="white">Update</font></a>
+								<a href="update-student?id=${student.id}"><font color="white">Update</font></a>
 							</button></th>
 						<th><button class="btn btn-warning">
-								<a href="/delete-student?id=${student.id}"><font color="white">Delete</font></a>
+								<a href="delete-student?id=${student.id}"><font color="white">Delete</font></a>
 							</button></th>
 
 					</tr>
@@ -45,7 +45,7 @@
 
 		</table>
 		<button type="button" class="btn btn-success">
-			<a href="/add-student"><font color="white">Add Student</font> </a>
+			<a href="add-student"><font color="white">Add Student</font> </a>
 		</button>
 		<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 		<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>

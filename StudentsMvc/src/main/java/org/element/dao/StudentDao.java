@@ -2,6 +2,8 @@ package org.element.dao;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.element.model.Student;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +11,7 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
+@Transactional
 public class StudentDao {
 	@Autowired
 	private SessionFactory sf;
