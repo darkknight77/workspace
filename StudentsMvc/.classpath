@@ -28,5 +28,8 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Spring 5.0"/>
+	<classpathentry kind="lib" path="C:/Users/Latheef/Downloads/Video/Compressed/hibernate-release-5.2.12.Final.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Latheef/Downloads/Video/Compressed/mysql-connector-java-5.1.45/mysql-connector-java-5.1.45-bin.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
