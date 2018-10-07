@@ -25,20 +25,20 @@
              <property name="suffix" value=".jsp"></property>
        </bean>
 
-                                 Data Source
+                            
                                  
-       <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+       <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
              <property name="driverClassName" value="${database.driver}"></property>
              <property name="url" value="${database.url}"></property>
              <property name="username" value="${database.username}"></property>
              <property name="password" value="${database.password}"></property>
        </bean>
 
-                                  Session Factory
+                                 
 
        <bean  id="sessionFactory"
               class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
-              <property name="datasource" ref="datasource"></property>
+              <property name="dataSource" ref="dataSource"></property>
               <property name="hibernateProperties">
                       <props>
                              <prop key="hibernate.dialect">${hibernate.dialect}</prop>
@@ -50,7 +50,7 @@
               <property name="packagesToScan" value="org.element.model"></property>
        </bean>
 
-                                    Transaction Manager
+                                    
                                     
        <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
               <property name="sessionFactory" ref="sessionFactory"></property>       
