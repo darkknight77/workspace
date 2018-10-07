@@ -21,7 +21,8 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class StudentController {
 
-	
+	@Autowired
+	private StudentDao studentdao;
 	@Autowired
 	private StudentService service;
 
@@ -30,7 +31,7 @@ public class StudentController {
 		// TODO Auto-generated method stub
 
 		ModelAndView mv = new ModelAndView();
-		List<Student> students=service.getstudents();
+		List<Student> students=studentdao.getstudents();
 		mv.addObject("students",students);
 		mv.setViewName("Homepage");
 
@@ -57,7 +58,7 @@ public class StudentController {
 			return "redirect:/addplayer";
 		}
 		
-		service.addstudent(student);
+		studentdao.addstudent(student);
 		
 		
 		return "redirect:/welcome";
@@ -68,7 +69,7 @@ public class StudentController {
 	public String showupdatestudent(ModelMap model,@RequestParam int id)
 	{
 		
-		List<Student> students=service.getstudents();
+		List<Student> students=studentdao.getstudents();
 		
 		for(Student student:students)
 		{
@@ -90,7 +91,7 @@ public class StudentController {
 			return "redirect:/addplayer";
 		}
 		
-		service.updatestudent(student);
+		studentdao.updatestudent(student);
 		
 		
 		return "redirect:/welcome";
@@ -102,7 +103,7 @@ public class StudentController {
 	public String deletestudent(@RequestParam int id)
 	{
 
-		service.deletestudent(id);
+		studentdao.deletestudent(id);
 		
 		return "redirect:/welcome";
 		
