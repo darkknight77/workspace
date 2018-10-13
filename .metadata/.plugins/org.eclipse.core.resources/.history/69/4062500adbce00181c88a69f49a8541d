@@ -12,9 +12,7 @@ public class Test {
 
 	private void exp() {
 		// TODO Auto-generated method stub
-		
 		System.out.println(this.i);
-		
 	}
 
 	public static void main(String[] args) {
