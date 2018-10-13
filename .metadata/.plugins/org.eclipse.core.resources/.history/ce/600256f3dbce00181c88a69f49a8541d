@@ -6,14 +6,9 @@ public class Test {
 	
 	Test()
 	{
-		
 		System.out.println("constructor");
 	}
-	Test(int i)
-	{
-		this();
-		System.out.println("constructor");
-	}
+
 	private void t() {
 		// TODO Auto-generated method stub
 		System.out.println("t");
