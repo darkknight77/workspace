@@ -3,28 +3,24 @@ package com.data;
 public class EvenOdd {
 
 	public static void main(String[] args) {
-		
+
+		System.out.print("Even: ");
 		for (int i = 1; i < 100; i++) {
-			
-				
-				if(i%2==0)
-				{
-				  System.out.print("Even: "+i);	
-				}
-					
-		}
-		
-		for (int i = 1; i < 100; i++) {
-			
-			
-			if(i%2!=0)
-			{
-			  System.out.print("Odd: "+i);	
+
+			if (i % 2 == 0) {
+				System.out.print(i+" ");
 			}
-			
-		
-		
+
+		}
+		System.out.println();
+		System.out.print("Odd: ");
+		for (int i = 1; i < 100; i++) {
+
+			if (i % 2 != 0) {
+				System.out.print(i+" ");
+			}
+
+		}
 	}
-	}
-	
+
 }
