@@ -8,9 +8,9 @@ public class palindrome {
 		int n = 392, r, s = 0;
 		int k = n;
 		while (n > 0) {
-			r = n % 10; //
-			n = n / 10; //
-			s = s * 10 + r; //
+			r = n % 10;
+			n = n / 10;
+			s = s * 10 + r;
 
 		}
 
