@@ -15,7 +15,7 @@ public class palindrome {
 			
 		}
 		
-		if(k==n)
+		if(n==k)
 		{
 			System.out.println("pal");
 		}
