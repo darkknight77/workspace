@@ -13077,3 +13077,8 @@ java.util.ConcurrentModificationException: null
 2018-11-10 19:44:35,035 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-11-10 19:44:35,050 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2018-11-10 19:44:39,447 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.in28minutes.springboot:first-springboot-project:0.0.1-SNAPSHOT @ C:\Users\Latheef\workspace\springboot-second-application\pom.xml.
+2018-11-10 19:44:46,616 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 19:44:46,620 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-10 19:44:46,623 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-11-10 19:44:46,626 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 19:44:46,629 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
