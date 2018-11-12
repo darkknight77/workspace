@@ -11,10 +11,12 @@ public class pattern6 {
 			int n = 1;
 			for (int j = 0; j < s; j++) {
 
-				System.out.print(n);
+				System.out.print(n+" ");
+				n++;
 			}
 
-			n++;
+			System.out.println();
+			s++;
 		}
 
 	}
