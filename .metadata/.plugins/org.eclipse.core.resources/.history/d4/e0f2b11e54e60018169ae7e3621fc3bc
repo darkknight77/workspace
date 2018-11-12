@@ -1,0 +1,24 @@
+package com.data;
+
+public class pattern6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int s = 1;
+
+		for (int i = 0; i < 5; i++) {
+			int n = 1;
+			for (int j = 0; j < s; j++) {
+
+				System.out.print(n+" ");
+				n++;
+			}
+
+			System.out.println();
+			s++;
+		}
+
+	}
+
+}
