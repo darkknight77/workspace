@@ -8,11 +8,13 @@ public class Factorial {
 		int n=5;
 		int factorial = 0;
 		
-		while(n>0)
+		while(n>1)
 		{
 			
-			factorial=n*(n-1);
+			factorial+=n*(n-1);
+			n-=2;
 		}
+		System.out.println(factorial);
 		
 	}
 
