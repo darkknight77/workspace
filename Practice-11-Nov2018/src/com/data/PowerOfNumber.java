@@ -5,7 +5,7 @@ public class PowerOfNumber {
 	public static long power(int num, int power) {
 		long output = 1;
 		while (power > 1) {
-			output *= num * num;
+			output*= num * num;
 			power -= 2;
 		}
 
