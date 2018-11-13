@@ -23,7 +23,7 @@ public class duplicateNumCount {
 			}
 			
 				s.add(a[i]);
-			System.out.println(a[i] +" - "+t);
+			System.out.println(s +" - "+t);
 			//System.out.println(a[i] + " - " + t);
 		}
 	}
