@@ -5,7 +5,7 @@ public class DuplicateNum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[] a = { 1, 14, 78, 13, 24, 31, 45, 56, 67, 78, 56 };
+		int[] a = { 1, 14, 13, 24, 31, 45, 56, 67, 78, 56 };
 		System.out.println("Duplicates: ");
 		for (int i = 0; i < a.length; i++) {
 
