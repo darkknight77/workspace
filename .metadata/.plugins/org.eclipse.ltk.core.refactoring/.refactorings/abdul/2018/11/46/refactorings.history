@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;duplicateNumCount.java&apos; to &apos;Practice-11-Nov2018/src/com.data&apos;&#x0D;&#x0A;- Original project: &apos;abdul&apos;&#x0D;&#x0A;- Destination element: &apos;Practice-11-Nov2018/src/com.data&apos;&#x0D;&#x0A;- Original element: &apos;abdul.duplicateNumCount.java&apos;" description="Copy compilation unit" destination="=Practice-11-Nov2018/src&lt;com.data" element1="/src&lt;abdul{duplicateNumCount.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1542107447311" units="1" version="1.0"/>
+</session>
