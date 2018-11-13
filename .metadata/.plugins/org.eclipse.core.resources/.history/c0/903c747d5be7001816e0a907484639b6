@@ -7,8 +7,8 @@ public class ArmstrongNumber {
 	{
 		int c= num%10;
 		System.out.println(c);
-		 num= num/10;
-		System.out.println(num);
+		int b= num%100;
+		System.out.println(b);
 		
 		
 		return " ";
