@@ -17,7 +17,7 @@ public class DuplicateNum {
 		}
 		System.out.println("sum is: "+sum);
 		duplicate=sum-((n*(n+1)/2));
-		System.out.println("duplicate number is: "+duplicate);
+		System.out.println("total is: "+duplicate);
 	}
 
 	
