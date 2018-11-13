@@ -9,7 +9,6 @@ public class DuplicateNumber {
         int highestNumber = numbers.size() - 1;
         System.out.println(highestNumber);
         int total = getSum(numbers);
-        System.out.println(total);
         int duplicate = total - (highestNumber*(highestNumber+1)/2);
         return duplicate;
     }
