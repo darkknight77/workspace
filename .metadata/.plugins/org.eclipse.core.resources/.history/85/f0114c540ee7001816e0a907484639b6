@@ -26,8 +26,6 @@ public class DuplicateNumber {
         }
         //add duplicate number into the list
         numbers.add(22);
-        System.out.println(numbers);
-        
         DuplicateNumber dn = new DuplicateNumber();
         System.out.println("Duplicate Number: "+dn.findDuplicateNumber(numbers));
        int num=20;
