@@ -7,19 +7,17 @@ public class DuplicateNum {
 
 		int[] a = {1,14,13,24,31,45,56,67,78,56};
 		
-		int sum=0;
-		int n=a.length-1;
-		int duplicate=0;
 		for (int i = 0; i < a.length; i++) {
-			
-			sum+=a[i];
-			System.out.println(a[i]);
+			System.out.println("Duplicates: ");
+			for (int j = i+1; j < a.length; j++) {
+				
+				if(a[i]==a[j])
+				{
+					System.out.println(a[i]);
+				}
+				
+			}
 		}
-		System.out.println(sum);
-		System.out.println(n);
-		System.out.println((n*(n+1))/2);
-		duplicate=sum-(((n*(n+1))/2));
-		System.out.println("duplicate number is: "+duplicate);
 	}
 
 	

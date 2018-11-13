@@ -1,0 +1,26 @@
+package com.data;
+
+public class DuplicateNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] a = {1,14,13,24,31,45,56,67,78,56};
+		
+		int sum=0;
+		int n=a.length-1;
+		int duplicate=0;
+		for (int i = 0; i < a.length; i++) {
+			
+			sum+=a[i];
+			System.out.println(a[i]);
+		}
+		System.out.println(sum);
+		System.out.println(n);
+		System.out.println((n*(n+1))/2);
+		duplicate=sum-(((n*(n+1))/2));
+		System.out.println("duplicate number is: "+duplicate);
+	}
+
+	
+}

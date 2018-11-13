@@ -2,16 +2,11 @@ package abdul;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.text.Highlighter.Highlight;
 public class DuplicateNumber {
     public int findDuplicateNumber(List<Integer> numbers){
         int highestNumber = numbers.size() - 1;
-        System.out.println(highestNumber);
         int total = getSum(numbers);
-        System.out.println(total);
         int duplicate = total - (highestNumber*(highestNumber+1)/2);
-        System.out.println((highestNumber*(highestNumber+1)/2));
         return duplicate;
     }
      
@@ -26,18 +21,15 @@ public class DuplicateNumber {
      
     public static void main(String a[]){
         List<Integer> numbers = new ArrayList<Integer>();
-        for(int i=11;i<30;i++){
+        for(int i=1;i<30;i++){
             numbers.add(i);
         }
         //add duplicate number into the list
         numbers.add(22);
-        System.out.println(numbers);
-        
-        
         DuplicateNumber dn = new DuplicateNumber();
         System.out.println("Duplicate Number: "+dn.findDuplicateNumber(numbers));
        int num=20;
-       /*int count;
+       int count;
        for (int i = 1; i <= num; i++) {
     	   count = 0;
     	   for (int j = 2; j <= i / 2; j++) {
@@ -47,9 +39,9 @@ public class DuplicateNumber {
     	   }else{
     		   System.out.println(i);
     	   }
-    	   }*/
+    	   }
                
         
         
         
-       }}        
+       }}}        
