@@ -1,0 +1,31 @@
+package com.data;
+
+public class ArmstrongNumber {
+
+	public static String isArmstrong(int num) {
+		int c = 0, a = 0;
+		int temp = num;
+		while (num > 0) {
+			a = num % 10;
+			//System.out.println(a);
+			num = num / 10;
+			//System.out.println(num);
+			c = c + (a * a * a);
+			//System.out.println(c);
+		}
+
+		if (c == temp) {
+			return "Armstrong";
+		}
+
+		return " Not Armstrong";
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(isArmstrong(371));
+
+	}
+
+}

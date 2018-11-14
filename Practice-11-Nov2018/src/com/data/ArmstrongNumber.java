@@ -15,16 +15,16 @@ public class ArmstrongNumber {
 		}
 
 		if (c == temp) {
-			return "Palindrome";
+			return temp+" is Armstrong";
 		}
 
-		return " Not Palindrome";
+		return temp+" is not Armstrong";
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println(isArmstrong(153));
+		System.out.println(isArmstrong(372));
 
 	}
 
