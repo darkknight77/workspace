@@ -10831,3 +10831,9 @@ java.net.UnknownHostException: www.pramati.com
 	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:259)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-11-14 10:02:12.714
+!MESSAGE No repository found at http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/updates/bluemixAdapter/mars/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-11-14 10:02:49.280
+!MESSAGE No repository found at http://www.apache.org/dist/geronimo/eclipse/updates/.
