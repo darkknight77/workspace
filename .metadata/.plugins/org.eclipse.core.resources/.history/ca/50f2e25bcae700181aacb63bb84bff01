@@ -13,7 +13,7 @@ public class ArmstrongNumber {
 			num = num/10;
 			System.out.println(num);
 			c = c+(a*a*a);
-	        System.out.println(c);		
+	        		
 		
 			
 		}
