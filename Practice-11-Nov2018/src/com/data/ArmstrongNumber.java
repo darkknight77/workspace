@@ -2,40 +2,30 @@ package com.data;
 
 public class ArmstrongNumber {
 
-	
-	public static String isArmstrong(int num)
-	{
-		int c=0,a=0;
+	public static String isArmstrong(int num) {
+		int c = 0, a = 0;
 		int temp = num;
-		while(num > 0)
-		{
-			a= num%10;
-			System.out.println(a);
-			num = num/10;
-			System.out.println(num);
-			c = c+(a*a*a);
-	        System.out.println(c);		
-		    
-			
+		while (num > 0) {
+			a = num % 10;
+			//System.out.println(a);
+			num = num / 10;
+			//System.out.println(num);
+			c = c + (a * a * a);
+			//System.out.println(c);
 		}
-		
-		if(num==temp)
-		{
-			
-			
+
+		if (c == temp) {
+			return "Palindrome";
 		}
-		
-		return " ";
-	} 
-	
-	
-	
+
+		return " Not Palindrome";
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		isArmstrong(153);
-		
-		
+		System.out.println(isArmstrong(153));
+
 	}
 
 }
