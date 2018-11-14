@@ -17,11 +17,11 @@ public class ReverseWordsInAsentence {
 				
 				reverseword=reverseword+word.charAt(j);
 				
-				System.out.println("rw "+reverseword);
+				System.out.println(reverseword);
 			}
 			
 			reversedSentence=reversedSentence+reverseword;
-			System.out.println("rs "+reversedSentence);
+			System.out.println(reversedSentence);
 		}
 		
 		
