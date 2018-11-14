@@ -7,11 +7,11 @@ public class ArmstrongNumber {
 		int temp = num;
 		while (num > 0) {
 			a = num % 10;
-			System.out.println(a);
+			//System.out.println(a);
 			num = num / 10;
-			System.out.println(num);
+			//System.out.println(num);
 			c = c + (a * a * a);
-			System.out.println(c);
+			//System.out.println(c);
 		}
 
 		if (c == temp) {
@@ -24,7 +24,7 @@ public class ArmstrongNumber {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println(isArmstrong(371));
+		System.out.println(isArmstrong(372));
 
 	}
 
