@@ -6,7 +6,7 @@ public class ArmstrongNumber {
 	public static String isArmstrong(int num)
 	{
 		
-		while(num > 0)
+		while(num>0)
 		{
 			int a= num%10;
 	        		
