@@ -1,0 +1,10 @@
+package com.data;
+
+public class ReverseWordsInAsentence {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
