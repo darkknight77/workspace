@@ -1,0 +1,27 @@
+package com.data;
+
+public class ArmstrongNumber {
+
+	
+	public static String isArmstrong(int num)
+	{
+		int c= num%10;
+		System.out.println(c);
+		 num= num/10;
+		System.out.println(num);
+		
+		
+		return " ";
+	} 
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		isArmstrong(153);
+		
+		
+	}
+
+}

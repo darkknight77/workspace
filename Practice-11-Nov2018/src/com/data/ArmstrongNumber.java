@@ -5,11 +5,14 @@ public class ArmstrongNumber {
 	
 	public static String isArmstrong(int num)
 	{
-		int c= num%10;
-		System.out.println(c);
-		 num= num/10;
-		System.out.println(num);
 		
+		while(num>0)
+		{
+			int a= num%10;
+	        		
+		
+			
+		}
 		
 		return " ";
 	} 
